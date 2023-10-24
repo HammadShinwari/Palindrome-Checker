@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: orange;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    background-color: aliceblue;
+    width: fit-content;
+    padding: 40px;
+    border-radius: 12px;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+}
+input{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(65, 56, 56);
+    color: #fff;
+}
+input:focus{
+    box-shadow: 0 5px 10px #268f78;
+    border: none;
+
+}
+.btn{
+   padding-top: 2vw;
+   text-align: center;
+}
+button{
+    padding: 10px 20px;
+    width: 27vw;
+    background-color: orange;
+    font-weight: bolder;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:focus{
+    box-shadow: 0 5px 10px #a18f8f;
+}
+button:active{
+    transform: scale(1.1);
+}
+p{
+    font-size: 20px;
+    text-align: center;
+}
+
+@media(max-width: 700px){
+    input{
+        font-size: 25px;
+        width: 70vw;
+        height: 10vw;
+    }
+    .button{
+        width: 300px;
+        font-size: 25px;
+    }
+}
+@media(max-width: 550px){
+    input{
+        font-size: 25px;
+        width: 70vw;
+        height: 10vw;
+    }
+    .button{
+        width: 300px;
+        font-size: 25px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+@media(max-width: 400px){
+    input{
+        width: 300px;
+        height: 12vw;
+    }
+}
